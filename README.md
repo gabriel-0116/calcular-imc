@@ -2,7 +2,7 @@
 
 ![Imagem do projeto finalizado](./imgs/preview.png)
 
-<h4 align="center"><a href="https://myportfolio-gabriel-santos.netlify.app/">Confira o projeto aqui</a></h4>
+<h4 align="center"><a href="https://calculator-imc-gabriel.netlify.app/">Confira o projeto aqui</a></h4>
 
 # Calculadora Índice de Massa corporal - Calorias
 
