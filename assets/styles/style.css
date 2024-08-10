@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: url(/imgs/gym.png);
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000000;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+header img.logo {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+form.form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 10px 0px #ff5959; 
+  width: 444px;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 1rem 1rem;
+}
+
+form.form .field-group {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form.form .field-group:first-child {
+  padding-top: 4rem;
+}
+
+form.form .field-group label[for="genero"] {
+  margin-right: 0.8rem;
+}
+
+.field-group label {
+  font-size: 1.5rem;
+}
+
+.field-group select {
+  border: none;
+  padding: 10px 15px;
+  appearance: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  font-family: monospace;
+  cursor: pointer;
+  outline: 0;
+}
+
+.field-group input {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px 5px;
+  border: none;
+  margin-left: 10px;
+}
+
+form.form .field-btn {
+  padding-top: 2rem;
+  align-content: center;
+}
+
+.button {
+  cursor: pointer;
+  display: block;
+  border: none;
+  padding: 14.5px 29px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: #000;
+  margin: 0.4rem auto;
+  transition: 0.3s all;
+  outline: 0;
+}
+
+.button:hover {
+  background-color: #34cb79;
+  transition: 500ms;
+}
+
+/* RESULT DESIGN */
+.result {
+  display: flex;
+  justify-content: center;
+}
+
+.result-list span {
+  color: #ff5959;
+}
+
+.x-padd {
+  padding: 10px 0 0 0;
+}
+
+.resultado-container {
+  background-color: #fff;
+  padding: 1rem;
+  width: 444px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0px #ff5959;
+  margin: 15px;
+}
+
+.resultado-container div.result-list {
+  margin-bottom: 0.6rem;
+}
+
+.resultado-container h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.2rem;
+  width: 100%;
+}
+
+.resultado-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.resultado-container ul li {
+  margin-bottom: 0.2rem;
+}
+
+.resultado-container ul li::before {
+  content: "\2192";
+  color: #34cb79;
+  display: inline-block;
+  width: 2em;
+  font-size: 1.2rem;
+}
+
+.resultado-container p::before {
+  content: "\2192";
+  color: #34cb79;
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  font-size: 1.2rem;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 1180px) {
+  header h1.title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 888px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header h1.title {
+    font-size: 2rem;
+  }
+
+  /* header img.logo {
+    width: 7%;
+  } */
+
+  .container {
+    max-width: 90vw;
+    flex-direction: column;
+  }
+
+  form.form {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .resultado-container {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
